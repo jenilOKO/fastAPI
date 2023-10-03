@@ -12,15 +12,15 @@ app = FastAPI()
 dicts = {}
 global json_file
 list1 = ['Asian']
-file = open('C:/Users/JENILPATEL/Desktop/Prediction_Model.pkl', 'rb')
+file = open('Prediction_Model.pkl', 'rb')
 random_number = 25
 SR_NO = random_number
 # dump information to that file
 similarity = pkl.load(file)
-dataa = pd.read_csv('C:/Users/JENILPATEL/Desktop/Recommendation/Soham_model/Design_full_demo.csv')
+dataa = pd.read_csv('Design_full_demo.csv')
 
 data1 = []
-with open('C:/Users/JENILPATEL/Desktop/Recommendation/Soham_model/Design_full_demo.csv') as csvfile:
+with open('Design_full_demo.csv') as csvfile:
     reader = csv.reader(csvfile)
     for row in reader:
         data1.append(row)
